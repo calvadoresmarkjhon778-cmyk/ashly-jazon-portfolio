@@ -1332,3 +1332,96 @@ footer p {
     }
 
 }
+
+/* =========================================
+   CONTACT LINKS
+========================================= */
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 9px 15px;
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(216, 194, 255, 0.18);
+
+    color: var(--lavender);
+
+    background: rgba(255, 255, 255, 0.04);
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.contact-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.contact-btn:hover {
+    transform: translateY(-4px);
+    color: white;
+}
+
+
+/* Facebook */
+
+.contact-btn.facebook:hover {
+    background: #1877f2;
+    border-color: #1877f2;
+
+    box-shadow:
+        0 8px 25px rgba(24, 119, 242, 0.3);
+}
+
+
+/* Instagram */
+
+.contact-btn.instagram:hover {
+    background:
+        linear-gradient(
+            45deg,
+            #f9ce34,
+            #ee2a7b,
+            #6228d7
+        );
+
+    border-color: transparent;
+
+    box-shadow:
+        0 8px 25px rgba(238, 42, 123, 0.3);
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .contact-links {
+        flex-direction: column;
+
+        width: 180px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+
+}
